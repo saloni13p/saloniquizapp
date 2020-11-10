@@ -1,0 +1,225 @@
+{
+    "quiz": [
+        {
+            "question_id": "1",
+            "question": "HTML is what type of language ?",
+            "answers": [
+                {
+                    "name": "Scripting Language",
+                    "correct": false
+                },
+                {
+                    "name": "Markup Language",
+                    "correct": true
+                },
+                {
+                    "name": "Programming Language",
+                    "correct": false
+                },
+                {
+                    "name": "Network Protocol",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question_id": "2",
+            "question": "HTML uses",
+            "answers": [
+                {
+                    "name": "User defined tags",
+                    "correct": false
+                },
+                {
+                    "name": "Pre-specified tags",
+                    "correct": false
+                },
+                {
+                    "name": "Fixed tags defined by the language",
+                    "correct": true
+                },
+                {
+                    "name": "Tags only for linking",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question_id": "3",
+            "question": "The year in which HTML was first proposed _______",
+            "answers": [
+                {
+                    "name": "1990",
+                    "correct": true
+                },
+                {
+                    "name": "1980",
+                    "correct": false
+                },
+                {
+                    "name": "2000",
+                    "correct": false
+                },
+                {
+                    "name": "1995",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question_id": "4",
+            "question": " Fundamental HTML Block is known as ___________",
+            "answers": [
+                {
+                    "name": "HTML Body",
+                    "correct": false
+                },
+                {
+                    "name": "HTML Tag",
+                    "correct": true
+                },
+                {
+                    "name": "HTML Attribute",
+                    "correct": false
+                },
+                {
+                    "name": "HTML Element",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question_id": "5",
+            "question": "Apart from <b> tag, what other tag makes text bold ?",
+            "answers": [
+                {
+                    "name": "<fat>",
+                    "correct": false
+                },
+                {
+                    "name": "<strong>",
+                    "correct": true
+                },
+                {
+                    "name": "<black>",
+                    "correct": false
+                },
+                {
+                    "name": "<emp>",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question_id": "6",
+            "question": "Who is Known as the father of World Wide Web (WWW)?",
+            "answers": [
+                {
+                    "name": "Robert Cailliau",
+                    "correct": false
+                },
+                {
+                    "name": "Tim Thompson",
+                    "correct": false
+                },
+                {
+                    "name": "Charles Darwin",
+                    "correct": false
+                },
+                {
+                    "name": "Tim Berners-Lee",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question_id": "7",
+            "question": "HTML web pages can be read and rendered by _________",
+            "answers": [
+                {
+                    "name": "Compiler",
+                    "correct": false
+                },
+                {
+                    "name": "Server",
+                    "correct": true
+                },
+                {
+                    "name": "Web Browser",
+                    "correct": false
+                },
+                {
+                    "name": "Interpreter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question_id": "8",
+            "question": "Which of the following is not a browser ?",
+            "answers": [
+                {
+                    "name": "Microsofts Bing",
+                    "correct": true
+                },
+                {
+                    "name": "Netscape Navigator",
+                    "correct": false
+                },
+                {
+                    "name": "Mozilla Firefox",
+                    "correct": false
+                },
+                {
+                    "name": "Opera",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question_id": "9",
+            "question": "Which HTML tag produces the biggest heading?",
+            "answers": [
+                {
+                    "name": "<h7>",
+                    "correct": false
+                },
+                {
+                    "name": "<h4>",
+                    "correct": false
+                },
+                {
+                    "name": "<h3>",
+                    "correct": false
+                },
+                {
+                    "name": "<h1>",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question_id": "10",
+            "question": "Tags and texts that are not directly displayed on the page are written in _____ section",
+            "answers": [
+                {
+                    "name": "<head>",
+                    "correct": true
+                },
+                {
+                    "name": "<title>",
+                    "correct": false
+                },
+                {
+                    "name": "<body>",
+                    "correct": false
+                },
+                {
+                    "name": "<html>",
+                    "correct": false
+                }
+                
+            ]
+        }
+    ]
+}

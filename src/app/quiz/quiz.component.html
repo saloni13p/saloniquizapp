@@ -1,0 +1,174 @@
+<!-- <p>quiz works!</p> -->
+<div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1 style="font-family:algerian; text-align:left;">Quiz Questions</h1><br/>
+</div>
+<div>
+    <!-- <input type="button" value="Load Quiz Details" (click)="loadQuiz()" />  -->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn btn-success" type="button" [value]="msg" (click)="loadQuiz()" />
+</div><br><br>
+
+<form [formGroup]="userRef" (ngSubmit)="saveAll()">
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[0].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[0].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[0].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[0].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer1" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+            <!-- <button type="button" (click)="save(quizInfo[0].question_id, i)">Save</button> -->
+        </div><br>
+    </div>
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[1].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[1].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[1].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[1].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer2" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+            <!-- <button type="button" (click)="save(quizInfo[1].question_id)">Save</button> -->
+        </div><br>
+    </div>
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[2].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[2].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[2].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[2].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer3" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+            <!-- <button type="button" (click)="save(quizInfo[2].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[3].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[3].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[3].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[3].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer4" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+            <!-- <button type="button" (click)="save(quizInfo[3].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[4].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[4].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[4].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[4].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer5" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+           <!--  <button type="button" (click)="save(quizInfo[4].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[5].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[5].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[5].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[5].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer6" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+           <!--  <button type="button" (click)="save(quizInfo[5].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[6].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[6].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[6].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[6].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer7" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+           <!--  <button type="button" (click)="save(quizInfo[6].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[7].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[7].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[7].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[7].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer8" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+           <!--  <button type="button" (click)="save(quizInfo[7].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[8].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[8].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[8].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[8].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer9" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+           <!--  <button type="button" (click)="save(quizInfo[8].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;<span>{{quizInfo[9].question_id}}</span>&nbsp;&nbsp;
+        <span>{{quizInfo[9].question}}</span><br>
+        <div >
+            <div *ngFor="let answer of quizInfo[9].answers; index as i" class="form-check">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input (change)="save(quizInfo[9].question_id-1, i)" class="form-check-input" type="radio" formControlName="answer10" id="answer" value="{{answer.name}}">
+                <label ngClass="{ng-checked ? isChecked : notChecked}" class="form-check-label" for="exampleRadios1">
+                    {{answer.name}}
+                </label>
+            </div>
+           <!--  <button type="button" (click)="save(quizInfo[9].question_id)">Save</button> -->
+        </div><br>
+    </div>
+
+<!-- Button trigger modal -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Submit Quiz
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Quiz Results</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          You have got {{counter}} answers correct.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Exit</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
